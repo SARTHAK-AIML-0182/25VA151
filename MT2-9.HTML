@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid Example</title>
+
+    <style>
+        
+       .body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+.h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.card img {
+    width: 100%;
+    height: 80%; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+.price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <h1>Our Featured Products</h1>
+
+    <div class="grid">
+        <div class="card">
+            <a href="#">
+                <img src="https://www.wearduds.com/cdn/shop/files/omni-slim-fit-sweatshirt-sage-green-elevate-casual-smart-look-premium-fabric.jpg?v=1756798934&width=1080" alt="Product 1">
+                <h3>Product 1</h3>
+            </a>
+            <p>High quality item with great features.</p>
+            <div class="price">₹1,200</div>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcR0U9eBz8r3F-SBVPHnMj4HFRqCxfSLrYLLPoWwrDJVykpvvnR2CmTeZg5kFrXiHg0vThRfQxyqR31gcXBEfFN8y12_Sitcfbrsa8xjMSZOdk4eUwvJwE5ypw" alt="Product 2">
+                <h3>Product 2</h3>
+            </a>
+            <p>Durable and stylish for daily use.</p>
+            <div class="price">₹750</div>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcT1ioRu9eZhPwbqe5OsnQkgtmRy4v6YyITAmbwzz0kjJEKz1GunzsIXO6WRIVtH6cZT80gKaLWfJdvJOJqraj6-kzYLOfoWOqLLjHX-ousl" alt="Product 3">
+                <h3>Product 3</h3>
+            </a>
+            <p>Soft, premium, and comfortable.</p>
+            <div class="price">₹1,200</div>
+        </div>
+
+        <div class="card">
+            <a href="#">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSiNkhOuYOTTsHz24SM5Q8qOX7SU2D8azUVj07_HM0AczZDq-HGxZzc7c99LGO91AskLspMnxmWNhuH3fmmEcxOpRcdgDfU8mgkPDvAftZ1zpS7VYmlhz4BhQ" alt="Product 4">
+                <h3>Product 4</h3>
+            </a>
+            <p>Sleek design with premium quality.</p>
+            <div class="price">₹1,599</div>
+        </div>
+    </div>
+
+</body>
+</html>
